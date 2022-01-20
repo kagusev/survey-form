@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form Project</title>
+	  <link rel="stylesheet" type="text/css" href="style.css" />
+  
+</head>  
+<body>
+  <h4>Skyfall Realty</h4>
+  <hr>
+  <h1 id='title'>Apartment Condition Form</h1>
+  <p id="description">This is an addendum to rental agreement. Must be returned prior to move in date.</p>
+   
+  <form id="survey-form">
+        <fieldset>
+          <h3>Tenant info:</h3> 
+
+          <label id="name-label">Name: <input type="text" id="name" required placeholder="name"/></label>
+          <label id="email-label">Email: <input type="email" id="email" required placeholder="email"/></label>
+          <label>Phone: <input type="text" id="phone" required /></label>        
+          <label id="number-label">Unit Number (1-36): <input type="number" id="number" min="01" max="36" required placeholder="unit #"/></label><label id="name-date"><strong>Lease Starting Date:</strong> <input type="date" id="date" required /></label> 
+        </fieldset>
+         
+         <fieldset> 
+           <h3>Inspected dwelling rooms includes:</h3> 
+           <label><input type="checkbox" value="kitchen-inspected" class="inline" required/> Kitchen</label> 
+           <label><input type="checkbox" value="bathroom-inspected" class="inline" required /> Bathroom </label>
+           <label><input type="checkbox" value="living-inspected" class="inline" required /> Living/Dining  R </label>
+           <label><input type="checkbox" value="bdr1-inspected" class="inline" required /> Bedroom1 </label>
+           <label><input type="checkbox" value="bdr2-inspected" class="inline" required /> Bedroom2 </label>
+           
+           <label id="condition-label" class="condition"> <strong>Overall Apartment Condition:</strong>  
+              <select id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Not acceptable</option>
+                <option value="2">Acceptable with repairs</option>
+                <option value="3">Acceptable</option>
+                 <option value="4">Great</option>
+             </select>
+           </label> 
+          
+         </fieldset>  
+     
+      <fieldset>
+       <h3> Inspection Result:</h3>
+       <label> <input type="radio" name="inspection-status" class="inline" value="accepted" checked/> Ready to move-in</label>
+         <label> <input type="radio" name="inspection-status" class="inline" value="accepted" /> Move-in on hold pending unit improvements</label>
+       <label> <input type="radio" name="inspection-status" class="inline" value="refused"/> Refuse to move-in (comment below)</label>
+        <label>
+          <textarea name="tenant-comments" rows="3" cols="30" placeholder="Here is list of things to address..."></textarea>
+			  </label>
+        <label id="name-date">Inspection Date: <input type="date" id="date" required /></label>
+        <label id="name-label"><strong>Signed by:</strong> <input type="text" id="name" required placeholder="enter your name"/></label>
+      </fieldset>
+      <fieldset>
+          <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+  
+
+  
+  
+ <form>
+</body>
+  
+  
+<html>
